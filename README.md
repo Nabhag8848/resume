@@ -42,3 +42,7 @@ The Markdown files are working source material. The public-facing artifact is th
 ## Scope
 
 This repository is intentionally focused on the resume and its supporting source material. It does not include private job application data, recruiter conversations, or confidential employer information.
+
+- Designed a browser-extension state layer that synchronized fitting requests and results across tabs, content scripts, workers, and side panels with optimistic updates.
+   Architected an async garment-generation pipeline that processed provider webhooks, persisted results to S3, and published completion events through Pub/Sub
+- Built a Pub/Sub backend SSE pipeline streaming fitting progress and results to the browser in ~10 seconds. 
