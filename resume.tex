@@ -118,10 +118,10 @@
   \textbf{\underline{orchex}} \textit{— Durable Workflow Engine} & \href{https://github.com/Nabhag8848/Orchex}{\underline{\faGithub\ GitHub}} \\
 \end{tabularx}
 \begin{itemize}
-  \item \textit{Project contribution to be added}
-  \item \textit{Technical architecture to be added}
-  \item \textit{Impact or scale to be added}
-  \item \textit{Reliability, execution, or orchestration detail to be added}
+  \item Built a durable workflow engine for versioned DAGs, preserving progress through infra failures
+  \item Implemented \(O(V+E)\) DAG checks with Kahn's algorithm and BFS for cycles, reachability, and typed edges
+  \item Built checkpointed runs with Postgres, a transactional outbox, SQS, and workers for node retries
+  \item Provisioned ECS, RDS, SQS/DLQ, and Lambda via Terraform; benchmarked 1K hop tx/s with zero failures
 \end{itemize}
 
 \vspace{2pt}
@@ -129,10 +129,10 @@
   \textbf{\underline{lyo}} \textit{— Virtual Fitting Room} & \href{https://github.com/Nabhag8848/lyo}{\underline{\faGithub\ GitHub}} \\
 \end{tabularx}
 \begin{itemize}
-  \item Built a Myntra-focused virtual fitting room that lets shoppers try outfits with a reusable avatar
-  \item Architected an async garment-gen pipeline processing provider webhooks, persisting results to S3, and publishing events via Pub/Sub
-  \item Built an SSE feedback loop streaming background-job progress and fitting results to the browser in ~10 seconds
-  \item Designed a browser extension that synchronized fitting requests and results across multiple tabs with optimistic updates
+  \item Built a Myntra virtual fitting room for shoppers to try outfits with a reusable avatar
+  \item Architected an async garment-gen pipeline using webhooks, S3, and Pub/Sub
+  \item Built an SSE feedback loop streaming fitting progress and results to the browser in ~10s
+  \item Built extension state sync for fitting requests and results across tabs with optimistic updates
 \end{itemize}
 
 \vspace{2pt}
