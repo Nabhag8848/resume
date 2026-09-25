@@ -60,16 +60,15 @@
   \textbf{\underline{Applied AI Consultant}} \textbar\ Independent \textbar\ Remote & Dec 2025 — Present \\
 \end{tabularx}
 \begin{itemize}
-  \item \textit{Applied AI and durable workflow work to be added}
-  \item \textit{Systems, agents, or orchestration contribution to be added}
+  \item Delivered confidential client work, including a video-downloader ext, while focusing on workflow infra \& sandboxing
 \end{itemize}
 
 \vspace{2pt}
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
-  \textbf{\underline{Health and Wellbeing}} \textbar\ Personal Sabbatical \textbar\ — & June 2025 — Nov 2025 \\
+  \textbf{\underline{Health and Wellbeing}} \textbar\ Personal Sabbatical \textbar\ \href{https://nabhag.dev/blog/sabbatical}{\underline{Sabbatical Blog}} & June 2025 — Nov 2025 \\
 \end{tabularx}
 \begin{itemize}
-  \item \textit{Context and transition note to be added if needed}
+  \item Recovered from severe Vitamin D3/B12 deficiencies that impaired cognition and communication
 \end{itemize}
 
 \vspace{2pt}
@@ -77,10 +76,10 @@
   \textbf{\underline{Rocket Health}} \textbar\ First Software Engineer \textbar\ Remote & Sept 2024 — May 2025 \\
 \end{tabularx}
 \begin{itemize}
-  \item \textit{Primary system ownership and domain context to be added}
-  \item \textit{Architecture and technical contribution to be added}
-  \item \textit{Measured scale or business impact to be added}
-  \item \textit{Reliability, automation, or operational outcome to be added}
+  \item First engineer for a platform serving \textbf{75K+ users}, \textbf{250K+ teleconsults}, and \textbf{\$1M+ ARR}
+  \item Designed the \href{https://dbdiagram.io/d/Prisma-Generated-66f4e6c53430cb846ca92ea6}{\underline{core data platform}} and built auth, onboarding, scheduling, payments, and RBAC systems
+  \item Built a queue-backed webhook ingestion pipeline routing auth, form, scheduling, and payment events to services
+  \item Migrated legacy data without loss; automated \textbf{15-minute} unpaid-call cancellation and prescription templates
 \end{itemize}
 
 \vspace{2pt}
@@ -89,7 +88,7 @@
 \end{tabularx}
 \begin{itemize}
   \item Built Svix-backed webhooks to deliver integration events and keep customer systems in sync
-  \item Implemented two-way sync across third-party integrations with normalized resources and field mappings
+  \item Implemented \textbf{two-way sync} across third-party integrations with normalized resources and field mappings
   \item Built OAuth flows with authorization, token refresh, and failure handling across integrations
   \item Adapted an isomorphic JavaScript SDK for React, Vue, Angular, and customer workflows
 \end{itemize}
@@ -99,8 +98,8 @@
   \textbf{\underline{Rocket.Chat}} \textbar\ Google Summer of Code \textbar\ Remote & May 2023 — Sept 2024 \\
 \end{tabularx}
 \begin{itemize}
-  \item Built a Notion integration for product managers to manage pages, tasks, and comments in Rocket.Chat, helping the company close more sales deals — \href{https://www.youtube.com/watch?v=G1fZBqy5jp8}{\underline{Demo}} · \href{https://www.figma.com/file/1Tk99mGHBmbQpOiT3vP17i/NotionApp}{\underline{Design}}
-  \item Built backward-compatible \href{https://github.com/RocketChat/Apps.Notion}{\underline{Notion OAuth2 flows}} for connecting and switching between multiple Notion workspaces on a platform serving 12 million users
+  \item Built a \href{https://github.com/RocketChat/Apps.Notion}{\underline{Notion integration}} for product managers to manage pages, tasks, and comments in Rocket.Chat, helping the company close more sales deals — \href{https://www.youtube.com/watch?v=G1fZBqy5jp8}{\underline{Demo}} · \href{https://www.figma.com/file/1Tk99mGHBmbQpOiT3vP17i/NotionApp}{\underline{Design}}
+  \item Built backward-compatible \href{https://github.com/Nabhag8848/RocketChat.Apps-OAuth2}{\underline{Notion OAuth2 flows}} for connecting and switching between multiple Notion workspaces on a platform serving \textbf{12 million} users
   \item Mentored the GSoC 2024 \href{https://github.com/RocketChat/Apps.AI.GIF}{\underline{AI GIF Generator}} and led Rocket.Chat Apps framework workshops
 \end{itemize}
 
@@ -109,8 +108,8 @@
   \textbf{\underline{Neev Technologies Inc.}} \textbar\ Engineering Intern \textbar\ Remote & May 2022 — July 2022 \\
 \end{tabularx}
 \begin{itemize}
-  \item Built a market data pipeline delivering crypto-derivative spreads from 4 exchanges in under 100ms
-  \item Merged concurrent bid/ask streams with RxJS, pushing updates to a client-side via SSE
+  \item Built a market data pipeline delivering crypto-derivative spreads from \textbf{4 exchanges} in \textbf{under 100ms}
+  \item Merged concurrent bid/ask streams with RxJS, pushing updates to clients via SSE
 \end{itemize}
 
 \section{Projects}
@@ -118,10 +117,10 @@
   \textbf{\underline{orchex}} \textit{— Durable Workflow Engine} & \href{https://github.com/Nabhag8848/Orchex}{\underline{\faGithub\ GitHub}} \\
 \end{tabularx}
 \begin{itemize}
-  \item Built a durable workflow engine for versioned DAGs, preserving progress through infra failures
-  \item Implemented \(O(V+E)\) DAG checks with Kahn's algorithm and BFS for cycles, reachability, and typed edges
+  \item Built a \textbf{durable workflow engine} for versioned DAGs, preserving progress through infra failures
+  \item Implemented \(\mathbf{O(V+E)}\) DAG checks with \textbf{Kahn's} algorithm and BFS for cycles, reachability, and typed edges
   \item Built checkpointed runs with Postgres, a transactional outbox, SQS, and workers for node retries
-  \item Provisioned ECS, RDS, SQS/DLQ, and Lambda via Terraform; benchmarked 1K hop tx/s with 0 failed transactions
+  \item Provisioned ECS, RDS, SQS/DLQ, and Lambda via Terraform; benchmarked \textbf{1K hop tx/s} with \textbf{0 failed transactions}
 \end{itemize}
 
 \vspace{2pt}
@@ -131,7 +130,7 @@
 \begin{itemize}
   \item Built a Myntra virtual fitting room for shoppers to try outfits with a reusable avatar
   \item Architected an async garment-gen pipeline using webhooks, S3, and Pub/Sub
-  \item Built an SSE feedback loop streaming fitting progress and results to the browser in ~10s
+  \item Built an \textbf{SSE feedback loop} streaming fitting progress and results to the browser in \textbf{about 10s}
   \item Built extension state sync for fitting requests and results across tabs with optimistic updates
 \end{itemize}
 
@@ -140,10 +139,10 @@
   \textbf{\underline{ask-pg}} \textit{— Terminal PG Agent} & \href{https://github.com/Nabhag8848/ask-postgres}{\underline{\faGithub\ GitHub}} \\
 \end{tabularx}
 \begin{itemize}
-  \item Built a local-first, Claude Code-like CLI that uses Ollama models to query PostgreSQL in natural language
-  \item Designed an agent harness with schema discovery, read-only SQL tools, row limits, and query timeouts
+  \item Built a local-first, Claude Code-like CLI using Ollama models to query PostgreSQL in natural language
+  \item Designed an \textbf{agent harness} with schema discovery, read-only SQL tools, row limits, and query timeouts
   \item Persisted resumable conversations locally with atomic JSON writes and owner-only file permissions
-  \item Built an interactive Bubble Tea TUI with streaming responses, styled output, and custom slash commands
+  \item Built an interactive TUI with Bubble Tea, streaming responses, styled output, and custom slash commands
 \end{itemize}
 
 \section{Skills}
