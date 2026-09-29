@@ -1,0 +1,159 @@
+\documentclass[12pt,a4paper]{article}
+
+% Recruiter-scannable, single-column resume template
+\usepackage[margin=0.35in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{fontawesome5}
+
+\definecolor{muted}{HTML}{4B5563}
+\definecolor{rule}{HTML}{68727D}
+\definecolor{linkblue}{HTML}{185ABC}
+\definecolor{bodytext}{HTML}{46515C}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{0.96}
+\color{bodytext}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.25em, itemsep=0.8pt, topsep=1.2pt, parsep=0pt, partopsep=0pt}
+\titleformat{\section}{\fontsize{13.5}{15.5}\selectfont\bfseries}{}{0pt}{}[\vspace{-3pt}\color{rule}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% Use a restrained bold name so the header is prominent without overpowering the page.
+\newcommand{\resumename}[1]{{\bfseries\fontsize{21}{24}\selectfont #1}}
+\newcommand{\profilelink}[2]{\href{#1}{\underline{#2}}}
+\newcommand{\contactsep}{\,\textbar\,}
+
+\begin{document}
+
+% Header: identity and public profiles on the left; direct contact on the right.
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \resumename{Kael Starforge} & {\fontsize{10.5}{12}\selectfont\href{mailto:kael.starforge@example.com}{\underline{kael.starforge@example.com}}} \\
+  \fontsize{10.5}{12}\selectfont
+  \profilelink{https://example.com/kael-linkedin}{LinkedIn}
+  \contactsep
+  \profilelink{https://example.com/kael-github}{GitHub}
+  \contactsep
+  \profilelink{https://example.com/kael-code}{LeetCode}
+  \contactsep
+  \profilelink{https://example.com/kael-portfolio}{Portfolio}
+  \contactsep
+  \profilelink{https://example.com/kael-writing}{Writing}
+  & {\fontsize{10.5}{12}\selectfont +91 90000 12345} \\
+\end{tabularx}
+
+\vspace{3pt}
+
+% Hard layout constraint: keep the completed resume to one A4 page.
+% Content must be prioritized and edited to fit; do not allow a second page.
+\section{Experience}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{Northstar Labs}} \textbar\ AI Infrastructure Consultant \textbar\ Remote & Jan 2026 — Present \\
+\end{tabularx}
+\begin{itemize}
+  \item Built agent execution services with isolated runtimes, durable queues, and observability for 3 early-stage teams
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{Independent Study}} \textbar\ Systems Engineering Sabbatical \textbar\ Remote & July 2025 — Dec 2025 \\
+\end{tabularx}
+\begin{itemize}
+  \item Studied distributed systems and built prototypes for workflow recovery, scheduling, and sandboxed code execution
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{CareBridge Health}} \textbar\ Founding Software Engineer \textbar\ Remote & Sept 2023 — June 2025 \\
+\end{tabularx}
+\begin{itemize}
+  \item Built the core platform serving \textbf{60K+ patients}, \textbf{180K+ consultations}, and 200+ clinicians
+  \item Designed authentication, onboarding, scheduling, payments, and role-based operations workflows
+  \item Built queue-backed webhook processing for forms, appointments, payments, and patient notifications
+  \item Migrated \textbf{120K+ records} without data loss and automated reconciliation, saving \textbf{12 hours/week}
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{SyncLayer}} \textbar\ Contract Software Engineer \textbar\ Hybrid & May 2023 — Aug 2023 \\
+\end{tabularx}
+\begin{itemize}
+  \item Built reliable webhooks for delivering integration events to customer systems
+  \item Implemented two-way synchronization with normalized resources and configurable field mappings
+  \item Developed OAuth flows covering authorization, token refresh, revocation, and failure recovery
+  \item Adapted a TypeScript SDK for React, Vue, and server-side customer applications
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{OpenCollab}} \textbar\ Open Source Fellow \textbar\ Remote & May 2022 — Apr 2023 \\
+\end{tabularx}
+\begin{itemize}
+  \item Built a workspace integration enabling teams to create, share, and comment on documents from chat
+  \item Added backward-compatible OAuth2 support for connecting and switching among multiple workspaces
+  \item Mentored 2 contributors and led workshops on extension APIs, testing, and release practices
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{BluePeak Technologies}} \textbar\ Software Engineering Intern \textbar\ Remote & May 2021 — July 2021 \\
+\end{tabularx}
+\begin{itemize}
+  \item Built a real-time market data service aggregating derivative spreads from \textbf{4 exchanges}
+  \item Merged concurrent bid and ask streams with RxJS and delivered browser updates through SSE
+\end{itemize}
+
+\section{Projects}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{flowforge}} \textit{— Durable Workflow Engine} & \href{https://example.com/flowforge}{\underline{\faGithub\ GitHub}} \\
+\end{tabularx}
+\begin{itemize}
+  \item Built a durable workflow engine for versioned DAGs that preserves progress through infrastructure failures
+  \item Implemented \(\mathbf{O(V+E)}\) validation with Kahn's algorithm and BFS for cycles and reachability
+  \item Added checkpointed runs with PostgreSQL, a transactional outbox, SQS, retries, and dead-letter queues
+  \item Provisioned ECS, RDS, SQS, and Lambda with Terraform; benchmarked \textbf{900 transitions/s}
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{fitview}} \textit{— Virtual Fitting Room} & \href{https://example.com/fitview}{\underline{\faGithub\ GitHub}} \\
+\end{tabularx}
+\begin{itemize}
+  \item Built a browser-based fitting room that lets shoppers preview outfits on reusable avatars
+  \item Designed an asynchronous generation pipeline using webhooks, object storage, and Redis Pub/Sub
+  \item Streamed fitting progress and results to the browser with SSE in a median of \textbf{11 seconds}
+  \item Synchronized requests and results across tabs, workers, and side panels with optimistic updates
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{querypilot}} \textit{— Terminal Database Agent} & \href{https://example.com/querypilot}{\underline{\faGithub\ GitHub}} \\
+\end{tabularx}
+\begin{itemize}
+  \item Built a local-first CLI for querying PostgreSQL databases in natural language
+  \item Designed a tool loop with schema discovery, read-only SQL, row limits, and query timeouts
+  \item Persisted resumable conversations with atomic writes and owner-only file permissions
+  \item Created a streaming terminal UI with styled output, session history, and slash commands
+\end{itemize}
+
+\section{Skills}
+\textbf{\underline{Languages:}} Go, TypeScript, Python \\
+\textbf{\underline{Infrastructure:}} Terraform, ECS, Lambda, SQS, S3, CloudWatch, Docker \\
+\textbf{\underline{Backend:}} PostgreSQL, Redis, NestJS, FastAPI, gRPC, BullMQ \\
+\textbf{\underline{Other:}} React, OpenTelemetry, LangGraph, Model Context Protocol
+
+\vspace{-3pt}
+\section{Education}
+\textbf{Western Institute of Technology} \hfill Pune, India \\
+B.Tech in Computer Science and Engineering \hfill Graduated May 2022
+
+\end{document}
