@@ -134,3 +134,12 @@ Graduation date not provided.
 - Description supplied by user: durable workflows.
 - Positioning target: recent infrastructure work relevant to AI infrastructure, sandboxes, workflow execution, and orchestration companies.
 - README, documentation, schema, design, demo, architecture, deployment, scale, and personal-contribution details still need to be extracted from the repository.
+
+### Sandbox Kit
+
+- Repository: https://github.com/sandbox-kit/kit
+- npm: https://www.npmjs.com/package/@sandbox-kit/sandbox (`@sandbox-kit/sandbox` 0.1.2). Daytona and Modal provider packages are also published.
+- Package description: one pluggable SDK for all your sandbox providers.
+- Replaces ask-postgres on the current resume.
+- Positioning on the resume: one pluggable SDK for all your sandbox providers, each installable independently. Do not name the providers currently available. One protobuf schema covers requests, responses, and errors in Go and TypeScript. The SDK has no middle service; every request goes directly to the provider.
+- No usage or performance metrics are recorded here.
