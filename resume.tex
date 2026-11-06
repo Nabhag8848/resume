@@ -1,7 +1,8 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt]{article}
 
 % Recruiter-scannable, single-column resume template
-\usepackage[margin=0.35in]{geometry}
+% Slightly taller than A4 so four projects fit on a single page.
+\usepackage[paperwidth=210mm,paperheight=330mm,margin=0.35in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[hidelinks]{hyperref}
@@ -53,14 +54,14 @@
 
 \vspace{3pt}
 
-% Hard layout constraint: keep the completed resume to one A4 page.
+% Hard layout constraint: keep the completed resume to one page.
 % Content must be prioritized and edited to fit; do not allow a second page.
 \section{Experience}
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
   \textbf{\underline{Applied AI Consultant}} \textbar\ Independent \textbar\ Remote & Dec 2025 — Present \\
 \end{tabularx}
 \begin{itemize}
-  \item Delivered confidential client work, including a video-downloader ext, while focusing on workflow infra \& sandboxing
+  \item Delivered NDA contracts, including a video-downloader ext, while focusing on workflow \& sandbox infra
 \end{itemize}
 
 \vspace{2pt}
@@ -121,6 +122,16 @@
   \item Implemented \(\mathbf{O(V+E)}\) DAG checks with \textbf{Kahn's} algorithm and BFS for cycles, reachability, and typed edges
   \item Built checkpointed runs with Postgres, a transactional outbox, SQS, and workers for node retries
   \item Provisioned ECS, RDS, SQS/DLQ, and Lambda via Terraform; benchmarked \textbf{1K hop tx/s} with \textbf{0 failed transactions}
+\end{itemize}
+
+\vspace{2pt}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  \textbf{\underline{sandbox-kit}} \textit{— Unified Sandbox SDK} & \href{https://www.npmjs.com/package/@sandbox-kit/sandbox}{\underline{\faNpm\ npm}} \contactsep \href{https://github.com/sandbox-kit/kit}{\underline{\faGithub\ GitHub}} \\
+\end{tabularx}
+\begin{itemize}
+  \item Built one \textbf{unified SDK} for all your sandbox providers, each provider installable independently
+  \item Defined one protobuf schema for requests, responses, and errors, compiled to Go and TypeScript via protoc
+  \item Sent every request directly to the provider, with no middle service; \textbf{600+} npm weekly downloads
 \end{itemize}
 
 \vspace{2pt}
